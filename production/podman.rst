@@ -48,7 +48,7 @@ See :ref:`general_token` in chapter General Bot Information.
 .. _podman_image:
 
 Creating Strawberry image
-----------------------
+-------------------------
 
 .. code-block:: bash
 

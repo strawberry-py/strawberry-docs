@@ -148,7 +148,7 @@ The following list explains some of them:
 .. _docker_installation_linux:
 
 Docker Installation - LINUX
--------------------
+---------------------------
 
 The first step is installing the docker:
 
@@ -183,14 +183,14 @@ We recommend creating ``.wslconfig`` file in your ``userprofile`` folder to enab
 This will automatically shrink virtual hard drives of the WSL2. This function is supported since September 2023 update.
 The file should contain this section:
 
-.. codeblock:: 
+.. code-block:: 
 
 	[experimental]
 	sparseVhd=true
 
 If you don't have WSL2 installed, you need to run following command in ``cmd`` as Administrator.
 
-.. codeblock::
+.. code-block::
 	
 	wsl --install
 

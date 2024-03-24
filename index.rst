@@ -1,5 +1,5 @@
 strawberry.py's developer documentation
-====================================
+=======================================
 
 `strawberry.py <https://github.com/strawberry-py/strawberry-py>`_ is universal and modular discord bot.
 

@@ -4,9 +4,9 @@ Developing modules
 ==================
 
 .. note::
+        Always start from ``main``, but never commit to ``main``.
+        You can also start from the fresh branch synchronized with ``main``.
 
-	Always start from ``main``, but never commit to ``main``.
-    You can also start from the fresh branch synchronized with ``main``.
 
 Let's say you want to make changes to our `Fun <https://github.com/strawberry-py/strawberry-fun>`_ repository.
 
