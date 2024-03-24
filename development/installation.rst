@@ -55,7 +55,7 @@ Please follow the official tutorial for `Installing GIT <https://git-scm.com/boo
 .. _devel_system_pre_setup_python:
 
 Install Python
-------------
+--------------
 
 Another important thing you'll need to install is Python and PIP (python package manager, on Windows and Mac should be part of Python installer).
 
@@ -146,7 +146,7 @@ In all cases, when the bot runs, the output should look like this:
 .. _devel_venv:
 
 Development environment
----------------
+-----------------------
 .. note::
 	This is not necessary to test out the bot if you are using :ref:`containers` to run the bot.
 

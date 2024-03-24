@@ -27,7 +27,7 @@ Then enable all Privileged Gateway Intents (Presence, Server Members, Message Co
 There are warnings about 100 servers, but we don't need to worry about it.
 
 On the top of this page, there is a Token section and a ``Reset Token`` button.
-Copy the generated token and put it into your ``.env`` file (if you don't have any, see the section :ref:`general_env` above) after the ``TOKEN=``.
+Copy the generated token and put it into your ``.env`` file (if you don't have any, see the section :ref:`direct_env` or :ref:`environment_file`) after the ``TOKEN=``.
 
 Open your ``.env`` file and put the token in.
 
@@ -38,7 +38,7 @@ You can invite the bot only to the servers where you have Administrator privileg
 .. _installing_module:
 
 Installing modules
------------------
+------------------
 
 Installing modules is done through the ``repository`` command of the bot instance or by manually cloning the module as described in :ref:`developing-modules`.
 

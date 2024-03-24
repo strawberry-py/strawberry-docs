@@ -1,4 +1,5 @@
 .. _code_quality:
+
 Code quality
 ============
 
