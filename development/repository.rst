@@ -64,7 +64,7 @@ In our case, we only have one module specified, so we have to create a file ``bi
 
     from pie import check, i18n, logger
 
-    _ = i18n.Translator(__file__).translate
+    _ = i18n.Translator("module/bistro").translate
     bot_log = logger.Bot.logger()
     guild_log = logger.Guild.logger()
 
