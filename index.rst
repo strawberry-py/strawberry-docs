@@ -19,6 +19,7 @@ strawberry.py's developer documentation
    :caption: User documentation
 
    user/base/index
+   user/wormhole/index
 
 .. toctree::
    :maxdepth: 1
