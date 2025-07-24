@@ -15,6 +15,12 @@ strawberry.py's developer documentation
    general/index
 
 .. toctree::
+   :maxdepth: 2
+   :caption: User documentation
+
+   user/base/index
+
+.. toctree::
    :maxdepth: 1
    :caption: Production section
 
