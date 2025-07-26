@@ -45,54 +45,54 @@ Command overview
     The base command name is ``repository``, but you can use its alias ``repo``.
 
 
-.. command:: repository install <git url> [branch]
+.. admonition:: repository install <git url> [branch]
 
-Download and check repository from given git URL. You may specify git branch to be checked out, but that should not be necessary in most cases.
+    Download and check repository from given git URL. You may specify git branch to be checked out, but that should not be necessary in most cases.
 
-.. note::
+    When module is installed, it will have to be enabled with the ``module`` command.
 
-    Always check the repository source before installing it. Malicious code may gain full control over bot's system user account.
+    .. note::
 
-.. note::
+        Always check the repository source before installing it. Malicious code may gain full control over bot's system user account.
+
+    .. note::
     
-    SQLite is not officially supported as production backend. If more advanced database schemes are used (e.g. PostgreSQL's ``ARRAY``), the bot will not be able to initialize the tables and won't be able to run.
+        SQLite is not officially supported as production backend. If more advanced database schemes are used (e.g. PostgreSQL's ``ARRAY``), the bot will not be able to initialize the tables and won't be able to run.
 
-When module is installed, it will have to be enabled with the ``module`` command.
+.. admonition:: repository update <repository name>
 
-.. command:: repository update <repository name>
+    Perform ``git pull``.
 
-Perform ``git pull``.
+    If repository's ``requirements.txt`` was updated, ``pip`` will be run to attempt package updates.
 
-If repository's ``requirements.txt`` was updated, ``pip`` will be run to attempt package updates.
+.. admonition:: repository checkout <repository name> <branch>
 
-.. command:: repository checkout <repository name> <branch>
+    Perform ``git checkout``.
 
-Perform ``git checkout``.
+    This should not be necessary in most cases, but it may be useful if you are switching in between various feature branches.
 
-This should not be necessary in most cases, but it may be useful if you are switching in between various feature branches.
+.. admonition:: repository uninstall <repository name>
 
-.. command:: repository uninstall <repository name>
+    Remove repository from the ``modules/`` directory.
 
-Remove repository from the ``modules/`` directory.
+    Please note that this will not delete database tables or perform any cleanups.
 
-Please note that this will not delete database tables or perform any cleanups.
+.. admonition:: repository list
 
-.. command:: repository list
+    List installed repositories and their modules.
 
-List installed repositories and their modules.
+    Non-loaded modules will be printed in *italics*.
 
-Non-loaded modules will be printed in *italics*.
+.. admonition:: module load <repository name>.<module name>
 
-.. command:: module load <repository name>.<module name>
+    Load module to be used. The preference is saved to the database and the module will be loaded automatically when the bot is started the next time.
 
-Load module to be used. The preference is saved to the database and the module will be loaded automatically when the bot is started the next time.
+.. admonition:: module reload <repository name>.<module name>
 
-.. command:: module reload <repository name>.<module name>
+    Reload the module, refreshing its commands.
 
-Reload the module, refreshing its commands.
+    This can be used after an update *if the update did not contain database updates*. Database cannot be refreshed by reloading, and you'll have to restart the bot to apply the update.
 
-This can be used after an update *if the update did not contain database updates*. Database cannot be refreshed by reloading, and you'll have to restart the bot to apply the update.
+.. admonition:: module unload <repository name>.<module name>
 
-.. command:: module unload <repository name>.<module name>
-
-Unload module. This command only disables module's commands, it does not perform any cleanups.
+    Unload module. This command only disables module's commands, it does not perform any cleanups.

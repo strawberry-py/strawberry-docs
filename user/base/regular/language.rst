@@ -8,14 +8,14 @@ If your language is missing or does not have full coverage, open an issue or a P
 Command overview
 ----------------
 
-.. command:: language ...
+.. admonition:: language ...
 
-Manage language settings.
+    Manage language settings.
 
-.. command:: language get
+.. admonition:: language get
 
-Display bot, guilds and your language preference.
+    Display bot, guilds and your language preference.
 
-.. command:: language set
+.. admonition:: language set
 
-Set your language preference.
+    Set your language preference.

@@ -41,20 +41,20 @@ Command overview
 
     No matter the logging configuration, all logs are always being saved to offline file on your server.
 
-.. command:: logging set <scope> <level> [module]
+.. admonition:: logging set <scope> <level> [module]
 
-Start logging messages of at least ``<level>`` into current channel.
+    Start logging messages of at least ``<level>`` into current channel.
 
-As a guild admin you’ll be using the ``guild`` scope. Bot owners may be interested in ``bot`` scope.
+    As a guild admin you'll be using the ``guild`` scope. Bot owners may be interested in ``bot`` scope.
 
-To filter out logs from specific module into separate channel, you can specify the module filter as ``<repository name>.<module name>``. Messages filtered by specific module channel are not being sent to the generic log channel.
+    To filter out logs from specific module into separate channel, you can specify the module filter as ``<repository name>.<module name>``. Messages filtered by specific module channel are not being sent to the generic log channel.
 
-Messages with ``bot`` scope are replicated to all channels subscribed to the scope, messages with ``guild`` scope will not be logged in other guilds.
+    Messages with ``bot`` scope are replicated to all channels subscribed to the scope, messages with ``guild`` scope will not be logged in other guilds.
 
-.. command:: logging unset <scope> [module]
+.. admonition:: logging unset <scope> [module]
 
-Stop logging messages from given scope.
+    Stop logging messages from given scope.
 
-.. command:: logging list
+.. admonition:: logging list
 
-Display currently enabled logs.
+    Display currently enabled logs.

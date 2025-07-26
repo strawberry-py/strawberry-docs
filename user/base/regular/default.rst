@@ -4,13 +4,13 @@ Basic, built-in commands and functions
 Commands
 --------
 
-.. command:: ping
+.. admonition:: ping
 
-Display the latency between bot and Discord API gateway. This can be used to debug slow bot responses.
+    Display the latency between bot and Discord API gateway. This can be used to debug slow bot responses.
 
-.. command:: uptime
+.. admonition:: uptime
 
-Display boot time of the bot and the time it has been running since.
+    Display boot time of the bot and the time it has been running since.
 
 Functions
 ---------
