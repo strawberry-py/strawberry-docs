@@ -16,18 +16,6 @@ You can create special custom emojis to replace guild names in messages. These c
 Command overview
 ----------------
 
-.. admonition:: wormhole ...
-
-    */command, administrator=True*
-
-    A group of configuration commands for the wormhole.
-
-.. admonition:: wormhole channel ...
-
-    */command, administrator=True*
-
-    A group of commands for wormhole channels.
-
 .. admonition:: wormhole channel set <channel>
 
     */command, administrator=True, default ACLevel: GUILD_OWNER*
@@ -39,12 +27,6 @@ Command overview
     */command, administrator=True, default ACLevel: GUILD_OWNER*
 
     Unregister a channel from the wormhole. The command will let you choose the ``channel``.
-
-.. admonition:: wormhole slowmode ...
-
-    */command, administrator=True*
-
-    A group of commands for wormhole channels slow mode.
 
 .. admonition:: wormhole slowmode set <time>
 
