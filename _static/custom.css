@@ -1,9 +1,0 @@
-/* Optional: style the directive like a subheading and inline code */
-code.command-directive {
-    font-family: monospace;
-    font-size: 1.2em; /* size of subheading */
-    background: #f8f8f8;
-    padding: 2px 4px;
-    display: block;
-    margin-bottom: 24px;
-}
