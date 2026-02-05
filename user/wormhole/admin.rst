@@ -60,3 +60,25 @@ The Slowmode group provides commands for managing slowmode across all Wormhole c
     
         It is equivalent to ``wormhole slowmode set 0``
 
+Ban commands
+^^^^^^^^^^^^
+
+Administrators can ban users from Wormhole. When a banned user’s username matches an entry in the ban database, Wormhole stops forwarding that user’s messages. Administrators may also set an optional expiration time, after which the ban is automatically lifted.
+
+.. admonition:: wormhole ban <user> <time>
+
+    */command, administrator=True, default ACLevel: BOT_OWNER*
+
+    Ban user from sending messages into wormhole. <time> (seconds) is optional.
+
+.. admonition:: wormhole banlist
+
+    */command, administrator=True, default ACLevel: SUB_MOD*
+
+    List banned users.
+
+.. admonition:: wormhole unban <user>
+
+    */command, administrator=True, default ACLevel: BOT_OWNER*
+
+    Remove ban for user.
