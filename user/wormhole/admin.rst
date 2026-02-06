@@ -60,3 +60,41 @@ The Slowmode group provides commands for managing slowmode across all Wormhole c
     
         It is equivalent to ``wormhole slowmode set 0``
 
+Pattern group
+^^^^^^^^^^^^^
+
+A configuration set for Wormhole message moderation using regex patterns. When any part of a message matches a defined pattern, that portion is replaced with the specified replacement before the message is forwarded to Wormhole.
+
+.. admonition:: wormhole pattern set <pattern> <replacement>
+    
+    */command, administrator=True, default ACLevel: MOD*
+
+    Set regex filtration pattern.
+
+.. admonition:: wormhole pattern update <id> <pattern> <replacement>
+    
+    */command, administrator=True, default ACLevel: MOD*
+
+    Update regex filtration pattern.
+
+.. admonition:: wormhole pattern list
+
+    */command, administrator=True, default ACLevel: MOD*
+
+    Lists regex filtration patterns.
+
+.. admonition:: wormhole pattern remove <id>
+
+    */command, administrator=True, default ACLevel: MOD*
+
+    Removes regex filtration pattern from the database and patterns array.
+
+Some usefull patterns
+
++--------------------------+-------------+---------------------------------+
+| Pattern                  | Replacement | Description                     |
++==========================+=============+=================================+
+| ``<@(\d+)>``             | ``\1``      | Mention replacement pattern     |
++--------------------------+-------------+---------------------------------+
+| ``\[(.*?)\]\(([^)]+)\)`` | ``\1 \2``   | Hidden link replacement pattern |
++--------------------------+-------------+---------------------------------+
