@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath(".."))
 # -- Project information -----------------------------------------------------
 
 project = "strawberry.py"
-copyright = "2024; Project contributors"
+copyright = "2026; Project contributors"
 author = "Czechbol, sinus-x, j-fiala, ArcasCZ"
 
 release = "unversioned"
